@@ -1,10 +1,25 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+/*reset*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/*General*/
 body{
-    background-color: #0B0E20;
+    background-color:#202124;
     min-height: 100vh;
     display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conainer{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+}
+
+section{
+    margin-top: 15px;
 }
