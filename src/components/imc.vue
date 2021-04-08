@@ -5,19 +5,17 @@
         </header>
         <main>
             <section class="genres conainer">
-                    <div @click="female = false, male = true" class="genre" :class="{select : male}">
+                    <div @click="genre= 'male' " class="genre" :class="{select : genre === 'male'}">
                         <img src="../assets/img/man-icon.svg" alt="">
                         <h3>Homem</h3>
                     </div>
 
-                <div @click="female = true, male = false" class="genre" :class="{select : female}">
+                <div @click="genre= 'female' " class="genre" :class="{select : genre === 'female'}">
                     <img src="../assets/img/female-icon.svg" alt="">
                     <h3>Mulher</h3>
                 </div>
 
             </section>
-
-
         </main>
         <footer></footer>
     </div>
@@ -28,8 +26,7 @@ export default {
     name: "Imc",
     data(){
         return{
-            male:false,
-            female:false,
+            genre:''
         }
     }
 }
