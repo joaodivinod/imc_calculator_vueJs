@@ -17,6 +17,13 @@ export default {
 
 <style>
 #app {
-margin: auto;
+    margin: auto;
+    display: flex;
+}
+@media(max-width: 600px){
+    #app{
+        width: 100%;
+        height: 100vh;
+    }
 }
 </style>
