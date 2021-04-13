@@ -47,7 +47,7 @@
             </section>
             <section class="result container">
                 <h3>Resultado</h3>
-                <h2>23.45</h2>
+                <h2>{{ calcImc() }}</h2>
                 <h3>Seu peso esta acima do peso normal</h3>
             </section>
         </main>
@@ -72,13 +72,12 @@ export default {
             height:0,
             weight:60,
             age:15,
+            result :0
         }
     },
     methods:{
        calcImc(){
-           return{
-               
-           }
+
        }
     }
 
